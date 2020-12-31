@@ -1,8 +1,8 @@
 const help = (prefix) => {
-	return `*Bem vindo ao Bot Sticker Bdr*\n
+	return `*Bem vindo ao Bot Markos*\n
 Criadores:
 *MARKOS BOT TA*
-*MARKOS*\n
+*e o TH*\n
 💠 ʟɪsᴛᴀ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏs 💠\n
 ✅ *${prefix}info*: Mostra informações sobre o bot\n
 ✅ *${prefix}sticker*: Transforma uma imagem, gif ou vídeo em sticker\n
