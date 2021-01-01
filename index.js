@@ -74,7 +74,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo*${mdata.subject}*`
+				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo meu amigo*${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -84,7 +84,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Sayonara @${num.split('@')[0]}👋`
+				teks = `Markos te deu adeus @${num.split('@')[0]}👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -119,7 +119,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '⌛ Atualmente em processo ⌛',
+				wait: '⌛ calma ai estou processando ⌛',
 				success: '✔️ Funciona ✔️',
 				error: {
 					stick: '❌ Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
@@ -129,7 +129,7 @@ async function starts() {
 					group: '❌ Este comando só pode ser usado em grupos! ❌',
 					ownerG: '❌ Este comando só pode ser usado pelo grupo proprietário! ❌',
 					ownerB: '❌ Este comando só pode ser usado pelo proprietário do bot! ❌',
-					admin: '❌ Este comando só pode ser usado por administradores de grupo! ❌',
+					admin: '❌ Comando exclusivo para adms bb ❌',
 					Badmin: '❌ Este comando só pode ser usado quando o bot se torna administrador! ❌'
 				}
 			}
@@ -301,7 +301,7 @@ async function starts() {
 						imageToBase64(res.data.result)
 						.then((ress) => {
 							buf = Buffer.from(ress, 'base64')
-							client.sendMessage(from, buf, image, {quoted: mek, caption: "*_Imagem enviada com sucesso!_*"})
+							client.sendMessage(from, buf, image, {quoted: mek, caption: "*_markos sempre te ajudando😎_*"})
 						})
 					})
 					
@@ -539,7 +539,7 @@ async function starts() {
 						if (isWelkom) return reply('Já está ativo')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Ativou com sucesso o recurso de boas-vindas neste grupo ✔️')
+						reply('você ativou o comando mais chato do whatsapp (boas-vindas) ✔️')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
