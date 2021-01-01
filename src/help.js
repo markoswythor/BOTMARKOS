@@ -1,7 +1,7 @@
 const help = (prefix) => {
 	return `*Bem vindo ao Bot Markos*\n
 Criadores:
-*MARKOS BOT TA*
+*MARKOS TA*
 *e o TH*\n
 💠 ʟɪsᴛᴀ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏs 💠\n
 ✅ *${prefix}info*: Mostra informações sobre o bot\n
@@ -13,7 +13,7 @@ _Use esse comando respondendo um sticker_\n
 ✅ *${prefix}girl*: Envia uma imagem de uma garota aleatória\n
 ✅ *${prefix}boy*: Envia uma imagem de um garoto aleatória\n
 ✅ *${prefix}simg [texto]*: Pesquisa uma foto referente ao texto\n
-❌ *${prefix}chat [mensagem]*: O bot responde sua mensagem\n
+❌ *${prefix}chat [mensagem]*: está indisponivel\n
 ✅ *${prefix}wait*: Pesquisa o anime pela imagem\n
 ✅ *${prefix}say [texto]*: O Bot repete o texto que foi mandado\n
 ✅ *${prefix}tiktokstalk [usuário]*: Manda as informações da conta do usuário\n
